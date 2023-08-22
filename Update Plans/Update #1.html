@@ -1,0 +1,128 @@
+<h1><span style="font-size:28px"><u>Update Plan</u></span></h1>
+
+<p><u><strong>as of 22/08/2023 Rev 4</strong></u></p>
+
+<h2><span style="font-size:22px"><u><strong>Server Plan</strong></u></span></h2>
+
+<h3><span style="font-size:18px"><u><strong>World Generation</strong></u></span></h3>
+
+<p>Entirely new world generation, I&#39;m scrapping the data packs and coding the world generation myself with the help of the Terra mod/plugin. the mod can be found at https://modrinth.com/plugin/terra.</p>
+
+<p>I decided to use Terra as it works better on papermc than the data packs do and it&#39;s easier to setup up, run and update than the data packs. it does mean I have to start from scratch when it comes to the world generation and that it&#39;ll take even longer to make, but it&#39;ll be worth it in the long run.</p>
+
+<p>With this, I&#39;ll be able to properly rework all the dimensions world generation not just the overworld. also, it&#39;ll allow me to properly test the custom terrain as well as I can customise everything I want, I&#39;m not limited by the vanilla system. which means I can make some genuinely crazy terrain appear.</p>
+
+<p>👓why did I decide to follow this route? well, it was either this or use a cobbled-together mess I understand but don&#39;t know the intricacy of which would have led to slower world gen, a large number of bugs, etc. Instead, I can use a project that will allow me to understand everything I add and how it affects the world, it will also allow me to completely customise the server world gen outside of vanilla limits and for me to not go and use hacky laggy ways to add some feature I want the world gen to have.</p>
+
+<p>To give you an idea of everything I want to add I&#39;ll provide a brief summary for now, with more to add later.</p>
+
+<p>- Completely custom vanilla biomes, being all the terrain will be reworked to fit the biome better.<br />
+- New Custom Trees, this will allow you to find trees as small as vanilla&#39;s most minor but that can also be so large that it covers several chunks with its canopy.<br />
+- Custom Overhauled Vanilla Structures, this is because some of the vanilla structures haven&#39;t been updated in years. I want to spice them up and make them somewhat harder while also making them something players will want to explore more off, I am currently thinking of adding different biome variants of certain structures. while also adding more depth to them with archaeology🥽</p>
+
+<h3><span style="font-size:18px"><u><strong>Menu System</strong></u></span></h3>
+
+<p>The menus will be completely reworked.</p>
+
+<p>They will be reworked as there will be 2 official menu systems on the server.</p>
+
+<p>The Legacy menu system, which will work like the previous one did, using custom heads for icons.<br />
+and the modern system which will use a custom resource pack to render its icons.</p>
+
+<p>The menu system will be expanded heavily to cover as many plugin commands as possible and to streamline it.</p>
+
+<h3><span style="font-size:18px"><u><strong>Server Shops &amp; Economy &amp; Spawners</strong></u></span></h3>
+
+<p>The changes here go hand in hand with the new menu system since I will be implementing a custom resource pack for this also, but if the resource pack is missing it&#39;ll show the legacy menu.</p>
+
+<p>Then the server shop will also now be supporting multiple currency&#39;s the planned currencies will be the ingame $ - dollar, Emeralds and Experience, I&#39;m still working on a plan to balance the three, but I have an idea of how to accomplish that already.</p>
+
+<h3><span style="font-size:18px"><u><strong>Ranks System</strong></u></span></h3>
+
+<p>The Ranks system has been an ongoing project that I would really like to implement, but even with custom rewards it seems that there will not be enough rewards for all the levels, so I&#39;m currently going over all my notes again to completely revamp the rewards, it&#39;ll function as it was planned for to it function but the rewards may be less per level. or some levels just plainly won&#39;t have a reward. That&#39;s all that will be changing here.</p>
+
+<p>The system will be integrated with the profile system. it&#39;ll also integrate with the new mobhunting plugin, so selected ranks will grant you higher rewards.</p>
+
+<h3><span style="font-size:18px"><u><strong>Resource pack</strong></u></span></h3>
+
+<p>The Server resource pack will be rebuilt from the ground up, I&#39;m currently working on it in a private repo on GitHub because I will be creating a multi-version support pack (something only recently introduced by Mojang [new 1.20.2 snapshot versions]), I&#39;m looking into making it possible to backport some of the planned features of the pack to older mc versions.</p>
+
+<p>But the new version of the pack will have all the custom elitemobs entities, models and the new menu system icons included in it.</p>
+
+<h3><span style="font-size:18px"><u><strong>Bug Fixes</strong></u></span></h3>
+
+<p>Ok, so there is a crazy amount of bugs that will be fixed once all this is finished, almost all the bugs we had with enchantments should be fixed.</p>
+
+<h4><span style="font-size:18px"><u><strong>Feature Changes</strong></u></span></h4>
+
+<h4><span style="font-size:16px"><u><strong>New Features</strong></u></span></h4>
+
+<h4><span style="font-size:12px"><u><strong>Towny Provinces</strong></u></span></h4>
+
+<h4>An add-on plugin for Towny, which makes claiming more organized, reducing staff workload and server toxicity.</h4>
+
+<p>Divides The Map Automatically into Provinces:</p>
+
+<p>&nbsp;&nbsp;&nbsp; 🎩 Civilised Provinces: 1 town only, no foreign outposts allowed.<br />
+&nbsp;&nbsp;&nbsp; 🌊 Sea Provinces: No towns, outposts allowed<br />
+&nbsp;&nbsp;&nbsp; 🏜️ Wasteland Provinces: No towns, outposts allowed</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp; Solves</p>
+
+<p>&nbsp;&nbsp;&nbsp; 💸 Overclaiming: Each town has a reserved claiming area; No need to throw away money on overclaiming.<br />
+&nbsp;&nbsp;&nbsp; 🚫 Claim Blocking: No town can block the claiming plans of another town.<br />
+&nbsp;&nbsp;&nbsp; 🐍 Snake Claiming: Snake claiming is irrelevant.<br />
+&nbsp;&nbsp;&nbsp; 🍩 Doughnut Claiming: Doughnut claiming is irrelevant.<br />
+&nbsp;&nbsp;&nbsp; 🍔 Town Surrounding: A town cannot surrounded itself with another town (e.g. to become un-attackable).<br />
+&nbsp;&nbsp;&nbsp; 🚷 Travel Blocking: Travel cannot be blocked by claims, because province borders are always wilderness.<br />
+&nbsp;&nbsp;&nbsp; ⛺ Inactive towns in popular areas: Upkeep can be raised in popular regions, discouraging inactive towns.<br />
+&nbsp;&nbsp;&nbsp; 🧜&zwj;♂️ Sea Peoples: Founding towns in the open sea can be prevented, if a server so chooses.<br />
+&nbsp;&nbsp;&nbsp; 🎅 Hermits: Upkeep can be lowered in unpopular regions, supporting players with isolationist styles of play.</p>
+
+<p>The Plugin can be found at https://github.com/TownyAdvanced/TownyProvinces</p>
+
+<h4><span style="font-size:14px"><u><strong>MobHunting</strong></u></span><br />
+MobHunting adds a new level of fun to hunting monsters, animals or opponents. Now you can get money or even dead players skull from kills, get bonuses for skilled and creative kills, and get special achievements!</h4>
+
+<p><br />
+Features</p>
+
+<p>&nbsp;&nbsp;&nbsp; Get Money for killing monsters.<br />
+&nbsp;&nbsp;&nbsp; Reward / Punish Money from killing mobs/animals.<br />
+&nbsp;&nbsp;&nbsp; Give players a Mobhead / Playerhead as a reward.<br />
+&nbsp;&nbsp;&nbsp; Steal money from other players pockets<br />
+&nbsp;&nbsp;&nbsp; Put a bounty on your enemies and get them killed.<br />
+&nbsp;&nbsp;&nbsp; Modifiers to increase your income for creative kills<br />
+&nbsp;&nbsp;&nbsp; Many Achievements to collect<br />
+&nbsp;&nbsp;&nbsp; MasterMobHunters (NPC&#39;s)<br />
+&nbsp;&nbsp;&nbsp; Mob grinder detection and Farm detection - these will not grant you any of the rewards mentioned.<br />
+&nbsp;&nbsp;&nbsp; Leaderboards</p>
+
+<p>The Plugin can be found at: https://www.spigotmc.org/resources/mobhunting.3582/</p>
+
+<h4><u><strong><span style="font-size:16px">Removed Features</span></strong></u><br />
+I completely removed Griefdefender, as much as I wanted to keep it, the system just plainly didn&#39;t work well, it was too overly complex to run alongside Towny as well, and to tell the truth i like Towny much more as it is much more streamlined than griefdefender is.</h4>
+
+<p>Removed Discord Economy Bridge due to the gambling aspects in it being the only reason it was added, but unfortunately due to the updated Minecraft Eula and Mojang going after servers breaking the Eula, I don&#39;t want to take the chance and keep this on the server.</p>
+
+<h4><span style="font-size:16px"><u><strong>Possible Features - still being looked into</strong></u></span><br />
+with how much I&#39;m integrating the different systems into each other and other updates that look small on the surface but are actually huge, I thought I would list a few features here which I might include later on after I do a bit more research on them and I have fleshed out the systems that they will interact with so I can see where they might cause issues, etc.</h4>
+
+<p>1. GeyserMC - in other words Bedrock edition compatibility, this one is going to be a huge project as it interacts with literally every system on the server.:goggles:</p>
+
+<h4><span style="font-size:16px"><u><strong>Thought about Features - Will never be Included</strong></u></span><br />
+I thought about adding the following features but they either have too many bugs or will just add another of the same system to the server.<br />
+<br />
+<u><strong>Auction houses</strong></u> - they are notorious for their duplication bugs and it&#39;ll be the third shop system... as we already have player shops on the server and then the server shop.</h4>
+
+<h2><u><strong>The Profile System &amp; Website Revamp &amp; Chat Integration</strong></u></h2>
+
+<p>The Profile system is complex and not completely planned out yet, but the idea is to create a unique player id on the server side to link all your server-related accounts together. that would be your discord, MC, Dynmap, Plan and website account.</p>
+
+<p>It will allow me and the future mod/admin team to better handle rule breakers and it&#39;ll also allow for better security when it comes to the accounts linked to the server. I&#39;m looking into adding 2-factor authentication to the website rewrite, but to use that to guard the dynmap and plan on the website as those are also planned to be integrated into the new website.</p>
+
+<p>The website itself will have a profile page where you can see your own profile and it&#39;ll include settings to hide your progress from others. when I say progress, I mean it will show your current health as of when you were last online, hunger, defense, inventory, end chest inventory and your backpack inventory. it&#39;ll also show all your details that Plan shows, outside of certain details like player ip&#39;s and locations. and most of this will also be added to a ingame profile page in the menu system.</p>
+
+<p>I plan on allowing it to also be previewed in Discord chat by a bot command, hence why it&#39;s all connected.</p>
+
+<p>Now the website will be greatly expanded upon in the future as I plan on integrating the dynmap and Plan sites into the website while also adding the new profile system, I will be adding forums to the website alongside a wiki that will have all the server documentation on it. the forums I&#39;m still looking into if it is feasible and how many issues it would cause me to integrate the discord with it so that you can read the forums on both the website and here on the server. then I&#39;m also hoping to completely integrate the chat channels between the server, discord, dynmap and the website. but dynmap chat might be removed in favour of just having the chat linked to the website.</p>
