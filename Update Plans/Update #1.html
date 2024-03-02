@@ -1,28 +1,52 @@
 <h1><span style="font-size:28px"><u>Update Plan</u></span></h1>
 
-<p><u><strong>as of 23/08/2023 Rev 4</strong></u></p>
+<p><u><strong>as of 02/03/2024 Rev 5</strong></u></p>
 
 <h2><span style="font-size:22px"><u><strong>Server Plan</strong></u></span></h2>
 
 <p><span style="font-size:22px"><u><strong>Revision Colour Index</strong></u></span><br />
 <span style="font-size:14px"><strong>Rev 1-3 = <span style="color:#8e44ad">Purple</span><br />
-Rev 4 = <span style="color:#2980b9">Blue</span></strong></span></p>
+Rev 4 = <span style="color:#2980b9">Blue</span></strong></span><br />
+<strong>Rev 5</strong> = <span style="color:#27ae60;"><strong>Green</strong></span></p>
 
 <h3><span style="font-size:18px"><u><strong>World Generation</strong></u></span></h3>
 
-<p>Entirely new world generation, I&#39;m scrapping the data packs and coding the world generation myself with the help of the Terra mod/plugin. the mod can be found at https://modrinth.com/plugin/terra.</p>
+<p><span style="color:#27ae60;">I&#39;m wiping the slate clean here, I will be using the plugin/mod Terra for all World Generation purposes except for certain structures.</span></p>
 
-<p>I decided to use Terra as it works better on papermc than the data packs do and it&#39;s easier to setup up, run and update than the data packs. it does mean I have to start from scratch when it comes to the world generation and that it&#39;ll take even longer to make, but it&#39;ll be worth it in the long run.</p>
+<p><span style="color:#27ae60;">The main reasons for this are customizability, ease of use, compatibility and performance. using datapacks has proven to cause massive lag when it comes to world generation. nothing I do can change that except not using them, they&#39;re also harder to modify without breaking something somewhere else and most include their own custom items which cause other headaches as the items don&#39;t register properly with plugins.<br />
+<br />
+it&#39;s also easier to make sure that the correct world generation is applied to the correct worlds, with datapacks it was a bit hit and miss as they&#39;re not properly supported server side with plugins. and then we get to the second reason, I will be adding Multiverse core or a plugin like it to add a lobby world to the server and later a tutorial world.</span></p>
 
-<p>With this, I&#39;ll be able to properly rework all the dimensions world generation not just the overworld. also, it&#39;ll allow me to properly test the custom terrain as well as I can customise everything I want, I&#39;m not limited by the vanilla system. which means I can make some genuinely crazy terrain appear.</p>
+<p><span style="color:#27ae60;"><span style="font-size:16px;"><u><strong>Multiverse</strong></u></span></span></p>
 
-<p><span style="color:#8e44ad">why did I decide to follow this route? well, it was either this or use a cobbled-together mess I understand but don&#39;t know the intricacy of which would have led to slower world gen, a large number of bugs, etc. Instead, I can use a project that will allow me to understand everything I add and how it affects the world, it will also allow me to completely customise the server world gen outside of vanilla limits and for me to not go and use hacky laggy ways to add some feature I want the world gen to have.</span></p>
+<p><span style="color:#27ae60;">Multiverse will be responsible for handling all our new Custom worlds making sure we can include test worlds on the server without having to worry that it will destroy the player&#39;s progress due to loss of inventory, etc. It will also allow us to include both a Lobby world and a Tutorial world.</span></p>
 
-<p><span style="color:#8e44ad">To give you an idea of everything I want to add I&#39;ll provide a brief summary for now, with more to add later.</span></p>
+<p><span style="color:#27ae60;"><u><strong>Lobby World</strong></u></span></p>
 
-<p><span style="color:#8e44ad">- Completely custom vanilla biomes, being all the terrain will be reworked to fit the biome better.<br />
+<p><span style="color:#27ae60;">The Lobby world will be where the player spawns when they first join the server and they can go visit it agian later by either entering a world portal or using the lobby command which will be implemented. the lobby will have a few fun minigames that can&#39;t be played elsewhere on the server and it will have a separate inventory system from the main world.</span></p>
+
+<p><span style="color:#27ae60;"><u><strong>Tutorial World</strong></u></span></p>
+
+<p><span style="color:#27ae60;">The tutorial world will be a lot of work, i&#39;m planning on using it to introduce players to some of the harder-to-understand plugins and as a reference guide for all to go back to if they want to look at which features the server has. those that we can&#39;t display easily, will rather have a space available in the tutorial library, where there will be guides that players can use to understand the more complex and vague mechanics included in the server. This will also be where the server&#39;s history will be recorded.</span></p>
+
+<p><span style="color:#27ae60;"><span style="font-size:16px;"><u><strong>Terra Config Packs</strong></u></span></span></p>
+
+<p><span style="color:#27ae60;"><span style="font-size:14px;"><u><strong>Alhinter (Overworld)</strong></u></span></span></p>
+
+<p><span style="color:#27ae60;">Alhinter is the overworld Terrapack I will be using and designing, it is a fork of the Origen and Overworld 2.0 Terrapacks and is a pack that merges both and expands upon them. It will include the following when I&#39;m done.</span><br />
+<br />
+<span style="color:#8e44ad">- Completely custom vanilla biomes, being all the terrain will be reworked to fit the biome better.<br />
 - New Custom Trees, This will allow you to find trees as small as vanilla&#39;s most minor but that can also be so large that it covers several chunks with its canopy.<br />
 - Custom Overhauled Vanilla Structures, This is because some of the vanilla structures haven&#39;t been updated in years. I want to spice them up and make them somewhat harder while also making them something players will want to explore more often, I am currently thinking of adding different biome variants of certain structures. while also adding more depth to them with archaeology</span></p>
+
+<p><span style="color:#27ae60;"><span style="font-size:16px;"><u><strong>Structures</strong></u></span></span></p>
+
+<p><span style="color:#27ae60;">These will be included in the terra config packs, but only the overhauled vanilla structures, any additional structures like wizards towers and large dungeons will be added by the Better Structures Plugin, as it features integration with elitemobs and other plugins which I won&#39;t have if i include them all in the Terra Config.</span></p>
+
+<p><span style="font-size:14px;"><u><strong>Links:</strong></u></span><br />
+<u>Terra:</u> <a href="https://modrinth.com/plugin/terra/">https://modrinth.com/plugin/terra/</a><br />
+<u>Better Structures:</u> <a href="https://www.spigotmc.org/resources/betterstructures.103241/">https://www.spigotmc.org/resources/betterstructures.103241/</a><br />
+<u><a href="https://www.spigotmc.org/resources/betterstructures.103241/"><span style="color:#000000;">Alhinter:</span><span style="color:#ffffff;"> </span></a></u><a href="https://github.com/Andermine/Alhinter">https://github.com/Andermine/Alhinter</a></p>
 
 <h3><span style="font-size:18px"><u><strong>Menu System</strong></u></span></h3>
 
@@ -35,7 +59,7 @@ and the modern system which will use a custom resource pack to render its icons.
 
 <p>The menu system will be expanded heavily to cover as many plugin commands as possible and to streamline it.</p>
 
-<h3><span style="font-size:18px"><u><strong>Server Shops &amp; Economy &amp; Spawners</strong></u></span></h3>
+<h3><span style="font-size:18px"><u><strong>Shops &amp; Economy &amp; Spawners</strong></u></span></h3>
 
 <p>The changes here go hand in hand with the new menu system since I will be implementing a custom resource pack for this also, but if the resource pack is missing it&#39;ll show the legacy menu.</p>
 
@@ -43,13 +67,13 @@ and the modern system which will use a custom resource pack to render its icons.
 
 <h3><span style="font-size:18px"><u><strong>Ranks System</strong></u></span></h3>
 
-<p>The Ranks system has been an ongoing project that I would really like to implement, but even with custom rewards it seems that there will not be enough rewards for all the levels, so I&#39;m currently going over all my notes again to completely revamp the rewards, it&#39;ll function as it was planned for to it function but the rewards may be less per level. or some levels just plainly won&#39;t have a reward. That&#39;s all that will be changing here.</p>
+<p>The ranks system has been an ongoing project that I would really like to implement, but even with custom rewards it seems that there will not be enough rewards for all the levels, so I&#39;m currently going over all my notes again to completely revamp the rewards, it&#39;ll function as it was planned for to it function but the rewards may be less per level. or some levels just plainly won&#39;t have a reward. That&#39;s all that will be changing here.</p>
 
 <p>The system will be integrated with the profile system. it&#39;ll also integrate with the new mobhunting plugin, so selected ranks will grant you higher rewards.</p>
 
 <h3><span style="font-size:18px"><u><strong>Resource pack</strong></u></span></h3>
 
-<p>The Server resource pack will be rebuilt from the ground up, I&#39;m currently working on it in a private repo on GitHub because I will be creating a multi-version support pack (something only recently introduced by Mojang [new 1.20.2 snapshot versions]), I&#39;m looking into making it possible to backport some of the planned features of the pack to older mc versions.</p>
+<p>The Server resource pack will be rebuilt from the ground up, I&#39;m currently working on it in a private repo on GitHub because I will be creating a multi-version support pack (something only recently introduced by Mojang [1.20.2 ]), I&#39;m looking into making it possible to backport some of the planned features of the pack to older mc versions.</p>
 
 <p><span style="color:#2980b9">The New Java Version of the pack will have the following included.</span></p>
 
@@ -122,7 +146,7 @@ Features</p>
 
 <p><u><strong><span style="font-size:14px"><span style="color:#2980b9">Elitemobs Expansion/Updates of Dungeons</span></span></strong></u></p>
 
-<p><span style="color:#2980b9"><span style="font-size:14px">a whole slew of new dungeon updates was planned to be released soon by the elitemobs teams, all the updates and any new dungoens will be added to the server.<br />
+<p><span style="color:#2980b9"><span style="font-size:14px">a whole slew of new dungeon updates was planned to be released soon by the elitemobs teams, all the updates and any new dungeons will be added to the server.<br />
 <br />
 I also plan to make my own dungeons in the future, my own quest, etc. for elitemobs but that&#39;s for the future, it will only happen after I have relaunched the server and then only after I have fixed all the reported bugs I can. so about 3 months after launch we should be good and by that time I&#39;ll probably start leaking a few preview images or texts of what I plan to add. I already have a few Custom maps ready, they only need to be updated to include newer MC content, actual structures and then, of course, the elitemobs side of things, which will include new storylines.</span></span></p>
 
@@ -163,7 +187,7 @@ with how much I&#39;m integrating the different systems into each other and othe
 
 <ul>
     <li><span style="color:#2980b9"><u><strong>GeyserMC</strong></u> - in other words Bedrock edition compatibility, this one is going to be a huge project as it interacts with literally every system on the server.</span></li>
-    <li><span style="color:#2980b9"><u><strong>Custom Foods</strong></u> - Well, since we have a large enough custom system in place already i thought why not add foods,,, i mean we have drinks/weapons/mobs/enchantments,etc</span></li>
+    <li><span style="color:#2980b9"><u><strong>Custom Foods</strong></u> - Well, since we have a large enough custom system in place already I thought why not add foods,,, I mean we have drinks/weapons/mobs/enchantments, etc.</span></li>
 </ul>
 
 <h4><span style="font-size:16px"><u><strong>Thought about Features - Will never be Included</strong></u></span><br />
@@ -203,7 +227,7 @@ The furthest I got with planning this system was a three-strike system I wanted 
 
 <ul>
     <li><span style="color:#2980b9"><strong>Owner</strong> - Literally the Owners of the Discord/MC Server and Website. - Will focus mainly on developing and somewhat managing all three</span></li>
-    <li><span style="color:#2980b9"><u><strong>Council </strong></u>- The Council members are the heads of they&#39;re respective admin teams. there will be 3 admin teams, one for each platform, they handle most of the managerial work of the admin teams and are basically the decision makers.</span></li>
+    <li><span style="color:#2980b9"><u><strong>Council </strong></u>- The Council members are the heads of they&#39;re respective admin teams. there will be 3 admin teams, one for each platform, They handle most of the managerial work of the admin teams and are basically the decision-makers.</span></li>
     <li><span style="color:#2980b9"><u><strong>Admin</strong></u> - Their work is to manage their respective platforms all three platforms admin teams will have the same role on Discord. They will be the ones that look into open tickets and if needed provide support or elevate the issue to the council.</span></li>
     <li><span style="color:#2980b9"><u><strong>Moderator</strong></u> - Same as admin three teams one for each platform handling the grunt work of looking into issues and reporting them to admins.</span></li>
     <li><span style="color:#2980b9"><u><strong>Member</strong></u> - Normal users of the discord server.</span></li>
